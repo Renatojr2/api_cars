@@ -3,9 +3,10 @@ import { promises } from 'fs' ;
 import cors from 'cors' ;
 import ('dotenv/config');
 
+import router from './rotas.js';
+
 const { readFile } = promises;
 
-const router = require('./rotas.js') ;
 
 const app = express();
 app.use(cors());
