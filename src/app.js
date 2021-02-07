@@ -1,7 +1,7 @@
 const express = require('express');
 const { promises } = require('fs') ;
 const cors = require('cors') ;
-require('dotenv/config.js');
+require('dotenv').config();
 const { readFile } = promises;
 
 const router = require('./rotas.js') ;
