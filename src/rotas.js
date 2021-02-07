@@ -1,5 +1,5 @@
-const express = require('express');
-const { promises } = require('fs');
+import express from 'express';
+import { promises } from 'fs';
 const { readFile } = promises;
 
 
@@ -16,4 +16,4 @@ router.get('/', async (req, res) => {
 });
 
 
-module.exports =  router;
+export default   router;

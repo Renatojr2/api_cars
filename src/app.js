@@ -1,7 +1,8 @@
-const express = require('express');
-const { promises } = require('fs') ;
-const cors = require('cors') ;
-require('dotenv').config();
+import express from 'express';
+import { promises } from 'fs' ;
+import cors from 'cors' ;
+import ('dotenv/config');
+
 const { readFile } = promises;
 
 const router = require('./rotas.js') ;
